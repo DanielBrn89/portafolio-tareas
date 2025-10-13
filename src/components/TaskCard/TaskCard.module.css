@@ -1,0 +1,15 @@
+.card{background:linear-gradient(180deg,var(--panel),var(--panel-2));border:1px solid #1f2330;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.35);overflow:hidden;transition:.2s ease;cursor:pointer}
+.card:hover{transform:translateY(-2px);border-color:#2a3142}
+.media img{display:block;width:100%;height:160px;object-fit:cover}
+.body{padding:14px}
+.head{display:flex;align-items:flex-start;justify-content:space-between;gap:8px}
+.title{font-size:18px;margin:0 0 6px}
+.desc{color:var(--muted);margin:0 0 8px;min-height:48px}
+.meta{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.due{font-variant-numeric:tabular-nums;color:#c7ccda}
+.badge{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:999px;font-size:12px;line-height:1;border:1px solid transparent;background:#1c2230}
+.badge--pendiente{border-color:#3a3f51;color:#ffd5d5;background:rgba(255,92,92,.08)}
+.badge--en-progreso{border-color:#3f3a17;color:#ffe9a6;background:rgba(241,196,15,.12)}
+.badge--completada{border-color:#1f3a2a;color:#c6f6c7;background:rgba(75,181,67,.12)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:12px;padding:4px 8px;border-radius:999px;background:#1d2331;border:1px solid #2a3142;color:#d3d7e6}

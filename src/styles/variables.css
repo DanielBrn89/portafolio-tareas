@@ -1,0 +1,6 @@
+:root{
+  --bg:#0b0c10; --panel:#111318; --panel-2:#161922; --text:#e7e9ee; --muted:#a2a7b8;
+  --brand:#6ea8fe; --ok:#4bb543; --warn:#f1c40f; --danger:#ff5c5c; --radius:16px;
+}
+*{box-sizing:border-box}
+html,body,#root{height:100%}
