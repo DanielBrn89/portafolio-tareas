@@ -16,6 +16,7 @@ export default function TaskCard({ task, onOpen }: { task: Task; onOpen: (t: Tas
     <article className={styles.card} role="button" onClick={() => onOpen(task)}>
       {task.image && (
         <div className={styles.media}>
+       
           <img src={task.image} alt={task.title} />
         </div>
       )}
@@ -25,6 +26,17 @@ export default function TaskCard({ task, onOpen }: { task: Task; onOpen: (t: Tas
           <StatusBadge status={task.status} />
         </div>
         <p className={styles.desc}>{task.description}</p>
+
+        {!!task.attachments?.length && (
+          <div className={styles.actions} onClick={(e) => e.stopPropagation()}>
+            {task.attachments.map((a, i) => (
+              <a key={i} className={styles.btnSmall} href={a.url} target="_blank" rel="noreferrer">
+                {a.type === "pdf" ? "📄" : "🔗"} {a.label}
+              </a>
+            ))}
+          </div>
+        )}
+
         <div className={styles.meta}>
           <div className={styles.chips}>
             {task.tags.map((t) => (

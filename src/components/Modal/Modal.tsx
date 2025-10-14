@@ -18,23 +18,33 @@ export default function Modal({ open, onClose, task }: { open: boolean; onClose:
           <h3>{task.title}</h3>
           <button className={styles.btnGhost} onClick={onClose} aria-label="Cerrar">✕</button>
         </header>
+
         {task.image && (
           <div className={styles.media}>
+           
             <img src={task.image} alt={task.title} />
           </div>
         )}
+
         <div className={styles.content}>
           <p className={styles.desc}>{task.description}</p>
+
+          {!!task.attachments?.length && (
+            <div className={styles.attachments}>
+              {task.attachments.map((a, i) => (
+                <a key={i} className={styles.btn} href={a.url} target="_blank" rel="noreferrer">
+                  {a.type === "pdf" ? "📄" : "🔗"} {a.label}
+                </a>
+              ))}
+            </div>
+          )}
+
           <div className={styles.grid}>
             <div><strong>Estado:</strong> {task.status}</div>
             <div><strong>Fecha límite:</strong> {formatDate(task.dueDate)}</div>
-            {task.link && (
-              <a className={styles.btn} href={task.link} target="_blank" rel="noreferrer">Abrir enlace</a>
-            )}
           </div>
         </div>
       </div>
     </div>
   );
 }
-

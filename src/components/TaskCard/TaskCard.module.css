@@ -5,6 +5,8 @@
 .head{display:flex;align-items:flex-start;justify-content:space-between;gap:8px}
 .title{font-size:18px;margin:0 0 6px}
 .desc{color:var(--muted);margin:0 0 8px;min-height:48px}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 4px}
+.btnSmall{display:inline-flex;align-items:center;gap:6px;height:30px;padding:0 10px;border-radius:10px;border:1px solid #2a3142;background:#151a24;color:#d7e4ff;text-decoration:none}
 .meta{display:flex;align-items:center;justify-content:space-between;gap:8px}
 .due{font-variant-numeric:tabular-nums;color:#c7ccda}
 .badge{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:999px;font-size:12px;line-height:1;border:1px solid transparent;background:#1c2230}

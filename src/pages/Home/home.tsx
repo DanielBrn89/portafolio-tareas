@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useTasks } from "../../features/tasks/hooks";
 import TaskCard from "../../components/TaskCard/TaskCard";
 import Toolbar from "../../components/Toolbar/Toolbar";
 import Modal from "../../components/Modal/Modal";
 import EmptyState from "../../components/EmptyState/EmptyState";
 import type { Task } from "../../features/tasks/types";
+import ProfileCard from "../../components/ProfileCard/ProfileCard";
 import styles from "./Home.module.css";
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
           <h1>Portafolio de Tareas</h1>
           <p className={styles.subtitle}>React + TypeScript + CSS Modules</p>
         </div>
+        <ProfileCard />
       </header>
 
       <Toolbar

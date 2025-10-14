@@ -1,0 +1,17 @@
+.backdrop{position:fixed;inset:0;background:rgba(0,0,0,.55);display:grid;place-items:center;padding:24px;z-index:50}
+.modal{width:min(820px,100%);background:linear-gradient(180deg,var(--panel),var(--panel-2));border:1px solid #1f2330;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,.35);overflow:hidden}
+.header{display:flex;align-items:center;justify-content:space-between;padding:16px 18px;border-bottom:1px solid #1f2330}
+.headerLeft{display:flex;align-items:center;gap:12px}
+.avatar{width:64px;height:64px;border-radius:999px;object-fit:cover;border:1px solid #2a3142}
+.name{margin:0;font-size:18px}
+.carnet{margin:2px 0 0;color:#c7ccda}
+.btnGhost{background:transparent;border:1px solid #2a3142;color:#b7bfd6;border-radius:10px;height:32px;padding:0 10px;cursor:pointer}
+.body{padding:16px 18px;display:grid;gap:14px}
+.bio{margin:0;color:#aeb6ca}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media (max-width:720px){.grid{grid-template-columns:1fr}}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-size:12px;padding:4px 8px;border-radius:999px;background:#1d2331;border:1px solid #2a3142;color:#d3d7e6}
+.links{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;height:36px;padding:0 12px;border-radius:10px;border:1px solid #284266;background:linear-gradient(180deg,#0f1b2e,#0c1522);color:#d7e4ff;text-decoration:none;cursor:pointer}
+.btnWide{display:inline-flex;justify-content:center;align-items:center;height:40px;border-radius:12px;border:1px solid #284266;background:linear-gradient(180deg,#0f1b2e,#0c1522);color:#d7e4ff;text-decoration:none;padding:0 14px}

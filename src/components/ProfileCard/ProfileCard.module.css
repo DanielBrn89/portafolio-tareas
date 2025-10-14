@@ -1,0 +1,8 @@
+.card{display:flex;gap:14px;align-items:center;background:linear-gradient(180deg,var(--panel),var(--panel-2));border:1px solid #1f2330;border-radius:16px;padding:14px 16px}
+.avatarWrap{width:64px;height:64px;border-radius:999px;overflow:hidden;border:1px solid #2a3142;padding:0;background:transparent;cursor:pointer}
+.avatar{width:100%;height:100%;object-fit:cover}
+.info{display:flex;flex-direction:column;gap:6px}
+.name{margin:0;font-size:18px}
+.carnet{margin:0;color:#c7ccda;font-variant-numeric:tabular-nums}
+.bio{margin:0;color:#aeb6ca}
+.btnGhost{align-self:flex-start;background:transparent;border:1px solid #2a3142;color:#b7bfd6;border-radius:10px;height:32px;padding:0 10px;cursor:pointer}

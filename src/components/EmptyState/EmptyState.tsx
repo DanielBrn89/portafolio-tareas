@@ -1,4 +1,4 @@
-import React from "react";
+
 import styles from "./EmptyState.module.css";
 
 export default function EmptyState({ title = "Sin resultados", hint = "Ajusta los filtros o busca otro término." }) {
