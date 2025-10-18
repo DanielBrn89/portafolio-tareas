@@ -18,9 +18,19 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <header className={styles.header}>
-        <div>
-          <h1>Portafolio de Tareas</h1>
-          <p className={styles.subtitle}>React + TypeScript + CSS Modules</p>
+        <div className={styles.brand}>
+          <img
+            className={styles.logo}
+            src="/logoumg.png"
+            alt="Logo"
+            width={56}
+            height={56}
+            loading="lazy"
+          />
+          <div>
+            <h1>Portafolio de Tareas</h1>
+        
+          </div>
         </div>
         <ProfileCard />
       </header>

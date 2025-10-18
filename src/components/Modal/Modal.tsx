@@ -6,11 +6,20 @@ import styles from "./Modal.module.css";
 export default function Modal({ open, onClose, task }: { open: boolean; onClose: () => void; task?: Task; }) {
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => e.key === "Escape" && onClose();
-    if (open) document.addEventListener("keydown", onKey);
-    return () => document.removeEventListener("keydown", onKey);
+    if (open) {
+      document.addEventListener("keydown", onKey);
+      // bloquea scroll del fondo
+      const prev = document.body.style.overflow;
+      document.body.style.overflow = "hidden";
+      return () => {
+        document.removeEventListener("keydown", onKey);
+        document.body.style.overflow = prev;
+      };
+    }
   }, [open, onClose]);
 
   if (!open || !task) return null;
+
   return (
     <div className={styles.backdrop} onClick={onClose}>
       <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
@@ -21,7 +30,7 @@ export default function Modal({ open, onClose, task }: { open: boolean; onClose:
 
         {task.image && (
           <div className={styles.media}>
-           
+            
             <img src={task.image} alt={task.title} />
           </div>
         )}
