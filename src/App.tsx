@@ -1,5 +1,5 @@
 
-import Home from "./pages/Home/home";
+import Home from "./pages/Home/Home";
 import { TasksProvider } from "./features/tasks/TasksContext";
 
 export default function App() {
