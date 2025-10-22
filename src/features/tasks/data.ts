@@ -49,7 +49,17 @@ export const SAMPLE_TASKS: Task[] = [
     status: "completada",
     tags: ["#html", "#CSS", "#javaScript"],
     dueDate: "2025-07-20",
-    image: "/images/formulario.png",
+    image: "/images/investigacion.jpg",
     attachments: [{ type: "link", label: "Formulario", url: "https://practica-formulario-omega.vercel.app/" }],
+  },
+  {
+    id: "t6",
+    title: "INVESTIGACION HOOKS EN REACT",
+    description: "Investigación sobre el uso de Hooks en React.",
+    status: "completada",
+    tags: ["#React", "#Hooks"],
+    dueDate: "2025-07-20",
+    image: "/images/hooks-react.png",
+    attachments: [{ type: "pdf", label: "Documento", url: "/docs/hooks-react.pdf" }],
   },
 ];
