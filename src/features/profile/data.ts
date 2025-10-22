@@ -12,7 +12,7 @@ export const PROFILE: Profile = {
   links: [
     { label: "GitHub", url: "https://github.com/DanielBrn89" },
   
-    { label: "Portafolio", url: "https://DanielBrn89.github.io" }
+    { label: "Portafolio", url: "https://DanielBrn89.github.io/home" }
   ],
   cvUrl: "/docs/cv.pdf"
 };

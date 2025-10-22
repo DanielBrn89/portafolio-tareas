@@ -59,7 +59,7 @@ export const SAMPLE_TASKS: Task[] = [
     status: "completada",
     tags: ["#React", "#Hooks"],
     dueDate: "2025-07-20",
-    image: "/images/hooks-react.png",
+    image: "/images/investigacion.jpg",
     attachments: [{ type: "pdf", label: "Documento", url: "/docs/hooks-react.pdf" }],
   },
 ];
